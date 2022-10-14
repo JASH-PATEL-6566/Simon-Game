@@ -1,0 +1,126 @@
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-block: 0.5em;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgba(245, 222, 179, 0.411);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+}
+
+.box {
+    height: 46%;
+    width: 45%;
+    border: 3px solid black;
+    margin-inline: 0.3em;
+    border-radius: 0.3em;
+    transition: 0.15s;
+}
+
+.box:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.main button {
+    width: fit-content;
+    margin-top: 2em;
+    font-size: 1.5em;
+    padding: 0.4em 2em;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 0.3em;
+    background-color: rgb(108, 142, 255);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.main button:disabled {
+    opacity: 0.9;
+}
+
+.display_none {
+    display: none;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+.display_hidden {
+    visibility: hidden;
+}
+
+.animation {
+    transform: scale(1.07);
+}
+
+/* @keyframes pop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.93);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+} */
